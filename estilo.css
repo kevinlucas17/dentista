@@ -1,0 +1,17 @@
+#principal{
+	width: 400px;	
+}
+.alinhar{
+	text-align: center;		
+}
+.margem{
+	margin-left: 50px;
+}
+.fontes{
+	font-size: 100px;
+	color: red;	
+}
+
+.item{
+	padding-top: 80px;
+}
