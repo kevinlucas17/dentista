@@ -15,3 +15,39 @@
 .item{
 	padding-top: 80px;
 }
+.botaoCad{
+	float: right;
+	font-size: 50px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+label{
+  cursor: pointer;
+}
+
+div label{
+	margin-top: 30px;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cadastro{
+	font-size: 12px;	
+}
+
+body div input{	
+	height: 60px;	
+	font-size: 60px;	
+	text-transform: uppercase;
+}
+
+#email{
+	text-transform: none;
+}
+fieldset legend{	
+	padding-top: 50px;
+	font-size: 16px;
+}
