@@ -27,7 +27,7 @@ label{
 }
 
 div label{
-	margin-top: 30px;
+	margin-top: 17px;
 }
 
 body{
@@ -49,5 +49,5 @@ body div input{
 }
 fieldset legend{	
 	padding-top: 50px;
-	font-size: 16px;
+	font-size: 20px;
 }
