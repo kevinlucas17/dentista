@@ -19,7 +19,7 @@
 	float: right;
 	font-size: 50px;
 	margin-top: 40px;
-	margin-bottom: 50px;
+	margin-bottom: 50px;	
 }
 
 label{
@@ -30,18 +30,14 @@ div label{
 	margin-top: 17px;
 }
 
-body{
-	font-family: 'Montserrat', sans-serif;
-}
-
 .cadastro{
 	font-size: 12px;	
 }
 
-body div input{	
-	height: 60px;	
-	font-size: 60px;	
+body div input.form-control{	
+	height: 60px;		
 	text-transform: uppercase;
+	border: 1px solid #3d3d3d;
 }
 
 #email{
@@ -49,5 +45,5 @@ body div input{
 }
 fieldset legend{	
 	padding-top: 50px;
-	font-size: 20px;
+	font-size: 22px;
 }
