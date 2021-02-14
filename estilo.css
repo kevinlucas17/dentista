@@ -9,7 +9,7 @@
 }
 .fontes{
 	font-size: 100px;
-	color: red;	
+	color: red;		
 }
 
 .item{
@@ -49,4 +49,8 @@ fieldset legend{
 }
 #dialogo{
 	display: none;
+}
+
+.botaoLogin{
+	height: 50px;
 }

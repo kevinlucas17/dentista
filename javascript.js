@@ -57,9 +57,7 @@ $(document).ready(function(){
 	 	}else{	 		
 	 		erroMini('tel','cpf invalido',0) 
 	 	}
-
 	 });
-
 })
 
 function erroMini(idClasse,msg,ts){	
@@ -80,6 +78,15 @@ function sair(){
 }
 function cadastro(){
 	window.location.href='cadastro.html';
+}
+function agendar(){
+
+}
+function hoje(){
+
+}
+function clientes(){
+	
 }
 
 
