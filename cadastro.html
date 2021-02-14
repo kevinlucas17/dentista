@@ -16,7 +16,7 @@
   </head>
   <body class="cadastro">   
       <div class="container">
-      <form method="post" name='dados'>
+      <form id="formSubmit" method="post" action="cadastra.php">
         <fieldset>          
         <div class="mt-5 mb-5 formulario">
               <span class="display-5">CADASTRO</span>
@@ -61,9 +61,12 @@
           </div>
           </fieldset>
           <div>
-            <button type="button" class="btn btn-success btn-lg botaoCad" disabled>CADASTRAR</button>
+            <button type="submit" id='botao' class="btn btn-success btn-lg botaoCad">CADASTRAR</button>
           </div>
-          </div>       
+          <div id="dialogo">
+           <P> TESTEEEE</P>
+          </div>
+        </div>       
     </div>
   		
 

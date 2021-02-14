@@ -47,3 +47,6 @@ fieldset legend{
 	padding-top: 50px;
 	font-size: 22px;
 }
+#dialogo{
+	display: none;
+}

@@ -4,48 +4,58 @@ $(document).ready(function(){
 	$('#data').mask('00/00/0000').trigger('input')
 	$('#tel').mask('(00) 00000-0000').trigger('input')
 	$('#num').mask('0#').trigger('input')
-	$('#cep').mask('00000-000').trigger('input');
+	$('#cep').mask('00000-000').trigger('input');	
 
-	 $('.formulario').on('submit',function(e){
-	 	e.preventDefault();
+	$('input').blur(function(){
+		if($(this).val()==""){
+			$(this).css({"border-color" : "#F00"})
+		}
+	});
+	$('input').focus(function(){
+		$(this).css({"border-color" : "#3d3d3d"})
+	});
 
-	 	let tnome = $(this).find('#nome').val();
-	 	let tcpf = $(this).find('#cpf').val().replace("/", "").replace("/", "");
-	 	let tdata = $(this).find('#data').val().replace(".", "").replace(".", "").replace("-", "");
-
-	 	if(nome.lenght<6){
-	 		//messageError();
-	 	}else if(data!=8){
-
-	 	}else if(cpf!=11){
-
-	 	}
-	 })
-
-	 $('#nome').blur(function(){
-	 	$(this).removeClass('error');
-		$(this).parent().find('.error-name').remove();
-	 	let nome =$(this).val();
-
+	$('#formSubmit').on('submit',function(e){	 	
+	 	let count = 0;
+	 	//verifico o nome	 	
+	 	let nome = $('this').find('#nome').val();
 	 	let regex = /[a-záàâãéèêíïóôõöúçñ']* [a-záàâãéèêíïóôõöúçñ']*/gmi;
-
 	 	let valido = regex.test(nome);
 
 	 	if(!valido){
-	 		$(this).addClass('error');
-			$(this).after('<div class="error-name" style="color: red;">Por favor, digite o nome completo.</div>');
-			$(this).focus();
-			$('.botaoCad').prop("disabled", true);
+	 		erroMini('nome','Digite o nome e sobrenome teste',1);
+	 		e.preventDefault();	 			
 	 	}else{
-	 		$('.botaoCad').prop("disabled",false);
+	 		erroMini('nome','Digite o nome e sobrenome teste',0)	 		
 	 	}
-	 })
+
+	 	let tcpf = $(this).find('#cpf').val().replace("/", "").replace("/", "");
+	 	let tdata = $(this).find('#data').val().replace(".", "").replace(".", "").replace("-", "");
+	 	
+	 	console.log(tcpf);
+	 	console.log(tdata);
+	 	if(tdata.length!=8){	 
+	 		erroMini('data','data invalido',1);
+	 		e.preventDefault();	 	 		
+	 	}else{
+	 		erroMini('data','data invalido',0);	 		
+	 	}
+	 	if(tcpf.length!=11){
+	 		erroMini('cpf','cpf invalido',1)
+	 		e.preventDefault();	 	 		
+	 	}else{	 		
+	 		erroMini('cpf','cpf invalido',0) 
+	 	}	 	
+	 });
 })
 
-
-
-
-function messageError(erro){
+function erroMini(idClasse,msg,ts){	
+	$('#'+idClasse).removeClass('error');
+	$('#'+idClasse).parent().find('.error-name').remove();
+	if(ts==1){
+		$('#'+idClasse).addClass('error');
+		$('#'+idClasse).after(`<div class="error-name" style="color: red;">${msg}</div>`);
+	}
 }
 
 function entrar() {
