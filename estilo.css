@@ -1,15 +1,21 @@
 #principal{
 	width: 400px;	
 }
+
+#entrar{
+	height: 50px;
+}
+
 .alinhar{
 	text-align: center;		
 }
+
 .margem{
 	margin-left: 50px;
 }
 .fontes{
 	font-size: 100px;
-	color: red;		
+	color: black;		
 }
 
 .item{
@@ -51,6 +57,6 @@ fieldset legend{
 	display: none;
 }
 
-#entrar{
-	height: 50px;
+div a:hover{
+	color: yellow;
 }
