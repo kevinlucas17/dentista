@@ -60,3 +60,14 @@ fieldset legend{
 div a:hover{
 	color: yellow;
 }
+.pagina{
+
+}
+li.list-group-item.active{
+	background-color: green;
+	border-color: black;
+}
+
+ul li a:hover{
+	text-decoration: none;
+}

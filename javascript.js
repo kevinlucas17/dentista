@@ -86,7 +86,7 @@ function hoje(){
 
 }
 function clientes(){
-	
+	window.location.href='clientes.html'
 }
 
 
