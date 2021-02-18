@@ -83,10 +83,9 @@ function agendar(){
 
 }
 function hoje(){
-
 }
 function clientes(){
-	window.location.href='clientes.html'
+	window.location.href='clientes.html';
 }
 
 

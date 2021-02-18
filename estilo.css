@@ -63,11 +63,20 @@ div a:hover{
 .pagina{
 
 }
-li.list-group-item.active{
-	background-color: green;
-	border-color: black;
+li.list-group-item.active{	
+	background-color: #fff;
+	border-color: #009933;
+    border-left:solid 10px #009933;
 }
 
-ul li a:hover{
+li a {
+	color: #212529;
 	text-decoration: none;
+}
+li a:hover{
+	text-decoration: none;
+	color: #212529;
+}
+.listagem{
+	border: solid 1px #DFDFDF;
 }
